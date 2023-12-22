@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello Serverless Cloud Function!';
+  getHello(): { message: string } {
+    return { message: 'Hello Serverless Cloud Function!' };
   }
 }
